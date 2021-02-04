@@ -28,10 +28,10 @@ int main(int argc, char * argv[]) {
     return UnityGetMainWindow();
 }
 -(void) showUnityWindow{
-    
+    [self.unityWindow makeKeyAndVisible];
 }
 -(void) hideUnityWindow{
-    
+    [self.window makeKeyAndVisible];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -42,9 +42,13 @@ int main(int argc, char * argv[]) {
     ViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
+    
     self.unityController = [[UnityAppController alloc] init];
+    [self.window makeKeyAndVisible];
+    [self.unityController application:application didFinishLaunchingWithOptions:launchOptions];
     if (launchOptions != nil) {
-        [self.unityController application:application didFinishLaunchingWithOptions:launchOptions];
+        NSLog(@"appdelegate didFinishLaunchingWithOptions");
+//        [self.unityController application:application didFinishLaunchingWithOptions:launchOptions];
 
     }
     return YES;

@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    [self.view addSubview:appDelegate.unityController.unityView];
+    
 }
 
+- (IBAction)startUnity:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    [appDelegate showUnityWindow];
+
+}
+- (IBAction)endUnity:(id)sender {
+}
 
 @end

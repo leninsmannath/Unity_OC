@@ -14,6 +14,7 @@ extern "C" const char* UnityDataBundleDir()
     static const char* dir = NULL;
     if (dir == NULL)
     {
+        
         if (bundleIdWithData == nil)
             dir = AllocCString([[NSBundle mainBundle] bundlePath]);
         else

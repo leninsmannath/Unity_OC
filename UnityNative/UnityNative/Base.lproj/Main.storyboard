@@ -16,8 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4v-oz-YzS">
+                                <rect key="frame" x="15" y="69" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startUnity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZD8-6a-nrC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ad-hd-9ZD">
+                                <rect key="frame" x="353" y="69" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="endUnity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XbL-h4-GyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P4v-oz-YzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8Al-lR-UwV"/>
+                            <constraint firstItem="P4v-oz-YzS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Dnj-YK-TtN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ad-hd-9ZD" secondAttribute="trailing" constant="15" id="KII-Ck-WIE"/>
+                            <constraint firstItem="3ad-hd-9ZD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="dJb-Gr-nr0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

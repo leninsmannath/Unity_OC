@@ -142,7 +142,7 @@
 		6B52DFFA25CACDA300694A12 /* AppDelegateListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B52DF8325CACDA200694A12 /* AppDelegateListener.mm */; };
 		6B52DFFB25CACDA300694A12 /* UnityViewControllerListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B52DF8625CACDA200694A12 /* UnityViewControllerListener.mm */; };
 		6B52DFFC25CACDA300694A12 /* LifeCycleListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B52DF8725CACDA200694A12 /* LifeCycleListener.mm */; };
-		6B52DFFE25CACDAB00694A12 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFFD25CACDAB00694A12 /* Data */; };
+		6B8828A025CC32DB00FA516E /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 6B88289925CC2BBB00FA516E /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -343,7 +343,7 @@
 		6B52DF8725CACDA200694A12 /* LifeCycleListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LifeCycleListener.mm; sourceTree = "<group>"; };
 		6B52DF8825CACDA200694A12 /* AppDelegateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateListener.h; sourceTree = "<group>"; };
 		6B52DF8925CACDA200694A12 /* UnityViewControllerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityViewControllerListener.h; sourceTree = "<group>"; };
-		6B52DFFD25CACDAB00694A12 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = ../../../../Build/Data; sourceTree = "<group>"; };
+		6B88289925CC2BBB00FA516E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = ../../../../Build/Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,7 +424,7 @@
 		6B1F6D5225CA6A7C0066C277 /* Unity */ = {
 			isa = PBXGroup;
 			children = (
-				6B52DFFD25CACDAB00694A12 /* Data */,
+				6B88289925CC2BBB00FA516E /* Data */,
 				6B52DEE725CACDA200694A12 /* Classes */,
 				6B52DCD925CACDA100694A12 /* Libraries */,
 			);
@@ -730,7 +730,7 @@
 			files = (
 				6B1F6D4625CA67D60066C277 /* LaunchScreen.storyboard in Resources */,
 				6B1F6D4325CA67D60066C277 /* Assets.xcassets in Resources */,
-				6B52DFFE25CACDAB00694A12 /* Data in Resources */,
+				6B8828A025CC32DB00FA516E /* Data in Resources */,
 				6B1F6D4125CA67D10066C277 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1028,7 +1028,7 @@
 					"-DINIT_SCRIPTING_BACKEND=1",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.UnityNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdm.NewUnityProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				UNITY_RUNTIME_VERSION = 2019.4.16f1;
@@ -1074,7 +1074,7 @@
 					"-DINIT_SCRIPTING_BACKEND=1",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.UnityNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdm.NewUnityProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				UNITY_RUNTIME_VERSION = 2019.4.16f1;

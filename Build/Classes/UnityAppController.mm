@@ -317,8 +317,10 @@ extern "C" void UnityCleanupTrampoline()
     if ([UIDevice currentDevice].generatesDeviceOrientationNotifications == NO)
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 #endif
-
-    UnityInitApplicationNoGraphics(UnityDataBundleDir());
+    ::printf("UnityInitApplicationNoGraphics");
+    NSBundle * bundle = [NSBundle bundleForClass:[self class]];
+    UnityInitApplicationNoGraphics([[bundle bundlePath] UTF8String]);
+//    UnityInitApplicationNoGraphics(UnityDataBundleDir());
 
     [self selectRenderingAPI];
     [UnityRenderingView InitializeForAPI: self.renderingAPI];
