@@ -130,12 +130,12 @@ NSInteger _forceInterfaceOrientationMask = 0;
 {
     NSAssert(_unityAppReady == NO, @"[UnityAppController startUnity:] called after Unity has been initialized");
 
-//    UnityInitApplicationGraphics();
+    UnityInitApplicationGraphics();
 
     // we make sure that first level gets correct display list and orientation
     [[DisplayManager Instance] updateDisplayListCacheInUnity];
 
-//    UnityLoadApplication();
+    UnityLoadApplication();
     Profiler_InitProfiler();
 
     [self showGameUI];
