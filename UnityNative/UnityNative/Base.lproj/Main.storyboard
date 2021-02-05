@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4v-oz-YzS">
-                                <rect key="frame" x="15" y="69" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="15" y="69" width="74" height="30"/>
+                                <state key="normal" title="Start Unity"/>
                                 <connections>
                                     <action selector="startUnity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZD8-6a-nrC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ad-hd-9ZD">
-                                <rect key="frame" x="353" y="69" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="327" y="69" width="72" height="30"/>
+                                <state key="normal" title="Hide Unity"/>
                                 <connections>
                                     <action selector="endUnity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XbL-h4-GyW"/>
                                 </connections>

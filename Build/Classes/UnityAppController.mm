@@ -129,13 +129,13 @@ NSInteger _forceInterfaceOrientationMask = 0;
 - (void)startUnity:(UIApplication*)application
 {
     NSAssert(_unityAppReady == NO, @"[UnityAppController startUnity:] called after Unity has been initialized");
-
-    UnityInitApplicationGraphics();
+//    unhide_this_method
+//    UnityInitApplicationGraphics();
 
     // we make sure that first level gets correct display list and orientation
     [[DisplayManager Instance] updateDisplayListCacheInUnity];
-
-    UnityLoadApplication();
+    //unhide_this_method
+//    UnityLoadApplication();
     Profiler_InitProfiler();
 
     [self showGameUI];
@@ -319,8 +319,8 @@ extern "C" void UnityCleanupTrampoline()
 #endif
     ::printf("UnityInitApplicationNoGraphics");
     NSBundle * bundle = [NSBundle bundleForClass:[self class]];
-    UnityInitApplicationNoGraphics([[bundle bundlePath] UTF8String]);
-//    UnityInitApplicationNoGraphics(UnityDataBundleDir());
+//    UnityInitApplicationNoGraphics([[bundle bundlePath] UTF8String]);
+    UnityInitApplicationNoGraphics(UnityDataBundleDir());
 
     [self selectRenderingAPI];
     [UnityRenderingView InitializeForAPI: self.renderingAPI];

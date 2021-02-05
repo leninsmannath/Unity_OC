@@ -45,12 +45,9 @@ int main(int argc, char * argv[]) {
     
     self.unityController = [[UnityAppController alloc] init];
     [self.window makeKeyAndVisible];
-    [self.unityController application:application didFinishLaunchingWithOptions:launchOptions];
-    if (launchOptions != nil) {
-        NSLog(@"appdelegate didFinishLaunchingWithOptions");
-//        [self.unityController application:application didFinishLaunchingWithOptions:launchOptions];
-
-    }
+    // unhide_this_method
+//    [self.unityController application:application didFinishLaunchingWithOptions:launchOptions];
+   
     return YES;
 }
 
